@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default function SearchBar() {
-  return (
-    <div>SearchBar</div>
-  )
+ 
+class SearchBar extends Component {
+    state = { }
+    render() { 
+        return (  
+            <div>
+                <input placeholder = "Searching for Deep's mum ..."/>
+                <button>Search Deez Nutz</button>
+            </div>
+        );
+    }
 }
+ 
+export default SearchBar
